@@ -26,6 +26,7 @@ Trước khi thực hiện bất kỳ task nào, bạn phải đọc theo thứ 
 | `coding-rule.md` | Quy tắc coding chung, naming, TypeScript |
 | `react-rule.md` | Quy tắc riêng cho React components, hooks |
 | `git-rule.md` | Branch naming, commit message convention |
+| `seo-rendering-rule.md` | Quy tắc mô hình rendering (CSR, SSG) và SEO |
 
 ### `workflows/` — Quy trình Làm việc
 Hướng dẫn từng bước cho các tác vụ phổ biến:
