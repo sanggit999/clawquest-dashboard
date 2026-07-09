@@ -10,8 +10,8 @@ Bảng điều khiển web tĩnh để giám sát và quản lý **ClawQuest Aut
 ## 🚀 Hướng dẫn Cài đặt & Phát triển
 
 ### Yêu cầu Môi trường
-- **Node.js**: v20 hoặc mới hơn
-- **npm**: v9 hoặc mới hơn
+- **Node.js**: v22 hoặc mới hơn
+- **npm**: v10 hoặc mới hơn
 
 ### Bước 1: Cài đặt thư viện
 ```bash
