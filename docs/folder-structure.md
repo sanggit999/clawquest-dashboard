@@ -13,7 +13,8 @@ ReactJS/
 │   ├── rules/
 │   │   ├── coding-rule.md      # Quy tắc coding chung cho AI agents
 │   │   ├── react-rule.md       # Quy tắc React cụ thể
-│   │   └── git-rule.md         # Quy ước Git và commit message
+│   │   ├── git-rule.md         # Quy ước Git và commit message
+│   │   └── seo-rendering-rule.md # Quy tắc mô hình rendering và SEO
 │   │
 │   ├── workflows/
 │   │   ├── create-feature.md   # Workflow tạo tính năng mới
