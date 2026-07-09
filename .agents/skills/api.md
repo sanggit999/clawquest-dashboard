@@ -24,13 +24,13 @@ Hướng dẫn AI Agent xử lý HTTP responses đúng chuẩn trong tầng **Se
 
 ## RESTful HTTP Methods Reference
 
-| Method | Ý nghĩa | Tần suất sử dụng | Mô tả |
-|--------|---------|------------------|-------|
-| **GET** | Lấy dữ liệu | ⭐⭐⭐⭐⭐ | Đọc dữ liệu từ resource, không làm thay đổi dữ liệu trên server. |
-| **POST** | Tạo mới | ⭐⭐⭐⭐⭐ | Tạo một resource mới hoặc thực hiện một tác vụ nghiệp vụ đặc biệt (như gửi lệnh). |
-| **PUT** | Cập nhật toàn bộ | ⭐⭐ | Thay thế toàn bộ resource hiện tại bằng một payload mới. |
-| **PATCH** | Cập nhật một phần | ⭐⭐⭐⭐⭐ | Chỉ sửa đổi một số trường cụ thể của resource mà không ghi đè toàn bộ. |
-| **DELETE** | Xóa | ⭐⭐⭐⭐ | Loại bỏ resource khỏi server. |
+| Method | Ý nghĩa | Mô tả |
+|--------|---------|-------|
+| **GET** | Lấy dữ liệu | Đọc dữ liệu từ resource, không làm thay đổi dữ liệu trên server. |
+| **POST** | Tạo mới | Tạo một resource mới hoặc thực hiện một tác vụ nghiệp vụ đặc biệt (như gửi lệnh). |
+| **PUT** | Cập nhật toàn bộ | Thay thế toàn bộ resource hiện tại bằng một payload mới. |
+| **PATCH** | Cập nhật một phần | Chỉ sửa đổi một số trường cụ thể của resource mà không ghi đè toàn bộ. |
+| **DELETE** | Xóa | Loại bỏ resource khỏi server. |
 
 ---
 
@@ -40,11 +40,11 @@ Hướng dẫn AI Agent xử lý HTTP responses đúng chuẩn trong tầng **Se
 
 ### 1. GraphQL Operations
 
-| Operation | Ý nghĩa | Tương đương trong REST | Tần suất sử dụng |
-|-----------|---------|-------------------------|------------------|
-| **Query** | Lấy dữ liệu | `GET` | ⭐⭐⭐⭐⭐ |
-| **Mutation** | Thêm, sửa, xóa dữ liệu | `POST`, `PUT`, `PATCH`, `DELETE` | ⭐⭐⭐⭐⭐ |
-| **Subscription** | Nhận dữ liệu thời gian thực qua WebSockets | Server-Sent Events (SSE) / WebSockets | ⭐⭐⭐ |
+| Operation | Ý nghĩa | Tương đương trong REST |
+|-----------|---------|-------------------------|
+| **Query** | Lấy dữ liệu | `GET` |
+| **Mutation** | Thêm, sửa, xóa dữ liệu | `POST`, `PUT`, `PATCH`, `DELETE` |
+| **Subscription** | Nhận dữ liệu thời gian thực qua WebSockets | Server-Sent Events (SSE) / WebSockets |
 
 ### 2. Bảng So Sánh RESTful vs GraphQL (Senior Level)
 
