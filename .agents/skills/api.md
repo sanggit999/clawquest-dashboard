@@ -34,6 +34,30 @@ Hướng dẫn AI Agent xử lý HTTP responses đúng chuẩn trong tầng **Se
 
 ---
 
+## GraphQL Operations & RESTful Comparison
+
+Ở cấp độ Senior, AI Agent cần nắm vững sự khác biệt giữa kiến trúc RESTful và GraphQL để tích hợp và thiết kế các hàm gọi API tối ưu:
+
+### 1. GraphQL Operations
+
+| Operation | Ý nghĩa | Tương đương trong REST | Tần suất sử dụng |
+|-----------|---------|-------------------------|------------------|
+| **Query** | Lấy dữ liệu | `GET` | ⭐⭐⭐⭐⭐ |
+| **Mutation** | Thêm, sửa, xóa dữ liệu | `POST`, `PUT`, `PATCH`, `DELETE` | ⭐⭐⭐⭐⭐ |
+| **Subscription** | Nhận dữ liệu thời gian thực qua WebSockets | Server-Sent Events (SSE) / WebSockets | ⭐⭐⭐ |
+
+### 2. Bảng So Sánh RESTful vs GraphQL (Senior Level)
+
+| Đặc tính | RESTful API | GraphQL |
+|---|---|---|
+| **Endpoint** | Nhiều endpoints theo tài nguyên (e.g. `/users`, `/posts`) | Một endpoint duy nhất (thường là `/graphql`) |
+| **Dữ liệu trả về** | Cố định bởi server (Dễ gặp Over-fetching hoặc Under-fetching) | Tùy biến bởi client thông qua Query Schema |
+| **HTTP Status Code** | Sử dụng đầy đủ mã lỗi HTTP (200, 400, 401, 403, 404, 500) | Luôn trả về `200 OK` kể cả khi có lỗi (lỗi nằm trong mảng `errors` của response body) |
+| **Error Handling** | Dựa vào HTTP status code để xử lý logic | Phải parse response body để tìm mảng `errors` trước khi xử lý |
+| **Caching** | Caching mặc định tốt ở tầng Network (HTTP caching) | Caching phức tạp hơn, chủ yếu ở tầng Client (như Apollo Client, Relay) |
+
+---
+
 ## TypeScript Types cho API Layer
 
 ```typescript
