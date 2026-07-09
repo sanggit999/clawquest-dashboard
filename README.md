@@ -74,13 +74,13 @@ Tóm tắt nhanh:
 
 ## 🔄 CI/CD Pipeline
 
-Pipeline tự động qua **GitHub Actions** (`.github/workflows/`):
+Pipeline tự động tích hợp trong một file duy nhất qua **GitHub Actions** (`.github/workflows/production.yml`):
 
 ```
-Push / PR → code-quality.yml (Lint)
-         → ci.yml (Build)
-
-Merge to main → deploy.yml (Deploy to GitHub Pages)
+Push / PR / Merge to main 
+  └── job: code-quality (Lint)
+        └── job: build (Build production bundle & Upload artifact)
+              └── job: deploy (Deploy to GitHub Pages - only on main branch)
 ```
 
 Để bật GitHub Pages: vào **Settings → Pages → Source: GitHub Actions**.

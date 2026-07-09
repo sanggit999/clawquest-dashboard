@@ -7,9 +7,7 @@ ReactJS/
 │
 ├── .github/
 │   └── workflows/
-│       ├── ci.yml              # Build & verify on push/PR
-│       ├── deploy.yml          # Deploy to GitHub Pages on merge to main
-│       └── code-quality.yml    # Lint check on push/PR
+│       └── production.yml      # CI/CD Production workflow (Lint, Build & Deploy)
 │
 ├── .agents/
 │   ├── rules/

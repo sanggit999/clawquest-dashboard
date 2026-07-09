@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react';
 import type { MinerStatus } from '@/types';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -91,7 +92,7 @@ const StatusCard = ({ status }: StatusCardProps) => {
 };
 
 interface StatItemProps {
-  icon: React.ReactNode;
+  icon: ReactNode;
   label: string;
   value: string;
   valueClass?: string;

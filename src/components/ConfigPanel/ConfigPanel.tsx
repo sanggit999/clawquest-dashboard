@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, type ReactNode, type ChangeEvent } from 'react';
 import type { MinerConfig } from '@/types';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -20,7 +20,7 @@ const ConfigPanel = ({ config, onSave }: ConfigPanelProps) => {
     setTimeout(() => setSaved(false), 2000);
   };
 
-  const handleChange = (field: keyof MinerConfig) => (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (field: keyof MinerConfig) => (e: ChangeEvent<HTMLInputElement>) => {
     setDraft((prev) => ({ ...prev, [field]: e.target.value }));
   };
 
@@ -70,7 +70,7 @@ const ConfigPanel = ({ config, onSave }: ConfigPanelProps) => {
 
 interface FieldProps {
   label: string;
-  children: React.ReactNode;
+  children: ReactNode;
 }
 
 const Field = ({ label, children }: FieldProps) => (
