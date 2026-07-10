@@ -50,6 +50,7 @@ Tài liệu tham khảo kỹ thuật theo từng chủ đề:
 | `testing.md` | Cách viết test và tổ chức test file |
 | `deployment.md` | CI/CD pipeline và deploy strategy |
 | `api.md` | HTTP status codes, service layer pattern, error handling |
+| `security.md` | Application Security, OWASP Top 10, Cryptography & DevSecOps |
 
 ---
 

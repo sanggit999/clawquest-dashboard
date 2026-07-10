@@ -28,7 +28,9 @@ ReactJS/
 │       ├── clean-code.md       # Nguyên tắc Clean Code
 │       ├── code-review.md      # Kỹ năng review code
 │       ├── testing.md          # Kỹ năng viết test
-│       └── deployment.md       # Kỹ năng deployment
+│       ├── deployment.md       # Kỹ năng deployment
+│       ├── api.md              # Kỹ năng RESTful/GraphQL API
+│       └── security.md         # Kỹ năng Application Security & DevSecOps
 │
 ├── docs/
 │   ├── architecture.md         # Tổng quan kiến trúc hệ thống
